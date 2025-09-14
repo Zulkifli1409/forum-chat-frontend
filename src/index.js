@@ -311,7 +311,7 @@ class ConsoleSecurityGuard {
 // ============================================
 
 // Initialize Security System
-const securityGuard = new ConsoleSecurityGuard();
+// const securityGuard = new ConsoleSecurityGuard();
 
 // Additional Security Headers (if needed)
 if (!securityGuard.isDevMode) {
