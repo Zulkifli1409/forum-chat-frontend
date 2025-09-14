@@ -104,8 +104,12 @@ export default function Navbar() {
                 to={user ? "/chat" : "/login"}
                 className="group flex items-center space-x-2 flex-shrink-0"
               >
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                  <span className="text-white font-bold text-sm">F</span>
+                <div className="w-8 h-8 rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                  <img
+                    src="/logo.png"
+                    alt="Forum Poltek Lhokseumawe"
+                    className="w-8 h-8 rounded-lg object-cover"
+                  />
                 </div>
                 <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   FORTEK
@@ -149,6 +153,17 @@ export default function Navbar() {
 
             {/* Right Section */}
             <div className="flex items-center space-x-4">
+              {/* Mobile User Actions (Theme & Notifications) */}
+              <div className="lg:hidden flex items-center space-x-2">
+                {user && <NotificationBell />}
+                <button
+                  onClick={toggleTheme}
+                  className="p-2 rounded-xl bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 transition-all duration-300 text-lg"
+                >
+                  {theme === "light" ? "🌙" : "☀️"}
+                </button>
+              </div>
+
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -263,7 +278,18 @@ export default function Navbar() {
                   💡 Sponsorship
                 </MobileNavLink>
 
+                {/* Mobile User Info */}
                 <div className="border-t border-gray-200/50 dark:border-gray-700/50 mt-4 pt-4">
+                  <div className="flex items-center space-x-3 px-4 py-2 bg-gray-50 dark:bg-gray-800 rounded-xl mb-3">
+                    <div className="w-8 h-8 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center">
+                      <span className="text-white text-sm font-medium">
+                        {user.alias?.charAt(0)?.toUpperCase()}
+                      </span>
+                    </div>
+                    <span className="text-sm text-gray-700 dark:text-gray-300">
+                      Hi, <span className="font-semibold">{user.alias}</span>
+                    </span>
+                  </div>
                   <button
                     onClick={logout}
                     className="w-full flex justify-center bg-red-50 text-red-600 px-4 py-3 rounded-xl text-base font-medium dark:bg-red-900/20 dark:text-red-400"
