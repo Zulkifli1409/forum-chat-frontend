@@ -11,45 +11,45 @@
     <!-- Preload critical resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="//api.forum-poltek.ac.id" />
     
     <!-- Favicon system -->
     <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
-    <link rel="icon" type="image/png" href="%PUBLIC_URL%/logo.png" />
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
     <!-- SEO & Accessibility -->
-<title>Forum Poltek - Diskusi Mahasiswa & Komunitas Kampus</title>
-<meta name="description" content="Forum diskusi anonim bagi mahasiswa Poltek untuk berbagi pengalaman, membahas persoalan kampus, dan membangun komunitas." />
-<meta name="author" content="Tim Forum Poltek" />
-<meta name="generator" content="Forum Poltek v1.0" />
+    <title>Forum Poltek - Diskusi Akademik & Komunitas Mahasiswa</title>
+    <meta name="description" content="Platform diskusi resmi untuk mahasiswa dan dosen Politeknik. Diskusi mata kuliah, sharing project, dan membangun jaringan profesional." />
+    <meta name="keywords" content="forum politeknik, diskusi akademik, mahasiswa poltek, komunitas kampus, pembelajaran online" />
+    <meta name="author" content="Tim Pengembang Forum Poltek" />
+    <meta name="generator" content="Forum Poltek v2.0" />
     
-   <!-- Social Media Meta -->
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="Forum Poltek" />
-<meta property="og:title" content="Forum Poltek - Diskusi Mahasiswa Anonim" />
-<meta property="og:description" content="Tempat mahasiswa Poltek berbagi cerita, membahas persoalan kampus, dan berdiskusi secara anonim." />
-<!-- <meta property="og:image" content="https://fortek.vercel.app/social-preview.png" /> -->
-<meta property="og:url" content="https://fortek.vercel.app" />
-<meta property="og:locale" content="id_ID" />
-
+    <!-- Social Media Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Forum Poltek" />
+    <meta property="og:title" content="Forum Poltek - Platform Diskusi Akademik" />
+    <meta property="og:description" content="Bergabunglah dengan komunitas mahasiswa dan dosen Politeknik untuk diskusi akademik, sharing knowledge, dan networking profesional." />
+    <meta property="og:image" content="%PUBLIC_URL%/social-preview.png" />
+    <meta property="og:url" content="https://forum.poltek.ac.id" />
+    <meta property="og:locale" content="id_ID" />
     
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@ForumPoltek" />
-<meta name="twitter:title" content="Forum Poltek - Diskusi Mahasiswa Anonim" />
-<meta name="twitter:description" content="Tempat mahasiswa Poltek berbagi cerita, membahas persoalan kampus, dan berdiskusi secara anonim." />
-<!-- <meta name="twitter:image" content="https://fortek.vercel.app/twitter-card.png" /> -->
-
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ForumPoltek" />
+    <meta name="twitter:title" content="Forum Poltek - Platform Diskusi Akademik" />
+    <meta name="twitter:description" content="Platform diskusi resmi mahasiswa dan dosen Politeknik" />
+    <meta name="twitter:image" content="%PUBLIC_URL%/twitter-card.png" />
     
-<!-- App & PWA Meta -->
-<meta name="theme-color" content="#2563eb" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<meta name="apple-mobile-web-app-title" content="Forum Poltek" />
-<meta name="msapplication-TileColor" content="#2563eb" />
-<!-- <meta name="msapplication-config" content="/browserconfig.xml" /> -->
-
+    <!-- App & PWA Meta -->
+    <meta name="theme-color" content="#2563eb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1e40af" media="(prefers-color-scheme: dark)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Forum Poltek" />
+    <meta name="msapplication-TileColor" content="#2563eb" />
+    <meta name="msapplication-config" content="%PUBLIC_URL%/browserconfig.xml" />
     
     <!-- Critical CSS -->
     <style>
@@ -341,79 +341,154 @@
     
     <!-- Structured Data -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Forum Poltek",
-  "url": "https://fortek.vercel.app",
-  "description": "Forum diskusi anonim bagi mahasiswa Poltek untuk berbagi cerita, membahas persoalan kampus, dan membangun komunitas.",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://fortek.vercel.app/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Forum Poltek",
-    "url": "https://fortek.vercel.app"
-  }
-}
-</script>
-
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Forum Poltek",
+      "description": "Platform diskusi akademik untuk mahasiswa dan dosen Politeknik",
+      "url": "https://forum.poltek.ac.id",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://forum.poltek.ac.id/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Politeknik",
+        "url": "https://poltek.ac.id"
+      }
+    }
+    </script>
   </head>
   
   <body>
-  <noscript>
-    <div class="error-container">
-      <div class="error-icon">⚠</div>
-      <h2 class="error-title">JavaScript Diperlukan</h2>
-      <p class="error-message">
-        Forum Poltek membutuhkan JavaScript agar berfungsi dengan baik.  
-        Silakan aktifkan JavaScript lalu muat ulang halaman.
-      </p>
+    <noscript>
+      <div class="error-container">
+        <div class="error-icon">⚠</div>
+        <h2 class="error-title">JavaScript Diperlukan</h2>
+        <p class="error-message">
+          Forum Poltek membutuhkan JavaScript untuk memberikan pengalaman terbaik. 
+          Silakan aktifkan JavaScript di browser Anda dan muat ulang halaman ini.
+        </p>
+        <div class="error-actions">
+          <button class="btn btn-primary" onclick="window.location.reload()">
+            🔄 Muat Ulang
+          </button>
+          <a href="mailto:support@forum-poltek.ac.id" class="btn btn-secondary">
+            📧 Hubungi Support
+          </a>
+        </div>
+      </div>
+    </noscript>
+    
+    <div id="root">
+      <div class="loading-container" role="main" aria-live="polite">
+        <div class="loading-header">
+          <div class="logo" aria-hidden="true">FP</div>
+          <h1 class="title">Forum Poltek</h1>
+          <p class="subtitle">Platform Diskusi Akademik & Komunitas</p>
+        </div>
+        
+        <div class="loading-content">
+          <div class="progress-bar" role="progressbar" aria-label="Loading progress">
+            <div class="progress-fill"></div>
+          </div>
+          <p class="loading-text" id="loading-status">Memuat aplikasi...</p>
+          
+          <ul class="status-list" aria-label="Loading steps">
+            <li class="status-item">
+              <div class="status-icon loading" aria-hidden="true"></div>
+              <span>Menginisialisasi aplikasi</span>
+            </li>
+            <li class="status-item">
+              <div class="status-icon" aria-hidden="true"></div>
+              <span>Memuat komponen</span>
+            </li>
+            <li class="status-item">
+              <div class="status-icon" aria-hidden="true"></div>
+              <span>Menyiapkan koneksi</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </noscript>
-
-  <div id="root">
-    <div class="loading-container" role="main" aria-live="polite">
-      <div class="logo">FP</div>
-      <h1 class="title">Forum Poltek</h1>
-      <p class="subtitle">Diskusi Mahasiswa Anonim</p>
-
-      <div class="progress-bar"><div class="progress-fill"></div></div>
-      <p class="loading-text" id="loading-status">Memuat aplikasi...</p>
-    </div>
-  </div>
-
-  <script>
-    (function () {
-      const statusText = document.getElementById("loading-status");
-      const messages = [
-        "Memuat aplikasi...",
-        "Menyiapkan komponen...",
-        "Menghubungkan ke server...",
-        "Hampir selesai..."
-      ];
-      let i = 0;
-
-      function step() {
-        if (i < messages.length) {
-          statusText.textContent = messages[i++];
-          setTimeout(step, 900);
+    
+    <!-- Enhanced loading script -->
+    <script>
+      (function() {
+        const statusItems = document.querySelectorAll('.status-item');
+        const statusText = document.getElementById('loading-status');
+        const messages = [
+          'Memuat aplikasi...',
+          'Menyiapkan komponen...',
+          'Menghubungkan ke server...',
+          'Hampir selesai...'
+        ];
+        
+        let currentStep = 0;
+        
+        function updateLoadingStatus() {
+          if (currentStep < statusItems.length) {
+            // Mark current step as complete
+            if (currentStep > 0) {
+              const prevIcon = statusItems[currentStep - 1].querySelector('.status-icon');
+              prevIcon.classList.remove('loading');
+              prevIcon.classList.add('complete');
+            }
+            
+            // Mark current step as loading
+            const currentIcon = statusItems[currentStep].querySelector('.status-icon');
+            currentIcon.classList.add('loading');
+            
+            // Update status text
+            if (messages[currentStep]) {
+              statusText.textContent = messages[currentStep];
+            }
+            
+            currentStep++;
+            
+            if (currentStep <= statusItems.length) {
+              setTimeout(updateLoadingStatus, 800);
+            }
+          }
         }
-      }
-      step();
-
-      window.addEventListener("error", () => {
-        document.getElementById("root").innerHTML = `
-          <div class="error-container">
-            <div class="error-icon">⚠</div>
-            <h2 class="error-title">Terjadi Kesalahan</h2>
-            <p class="error-message">Gagal memuat Forum Poltek. Silakan muat ulang.</p>
-            <button class="btn btn-primary" onclick="location.reload()">🔄 Muat Ulang</button>
-          </div>`;
-      });
-    })();
-  </script>
-</body>
+        
+        // Start loading simulation
+        setTimeout(updateLoadingStatus, 500);
+        
+        // Error handling
+        window.addEventListener('error', function(e) {
+          console.error('Application error:', e);
+          document.getElementById('root').innerHTML = `
+            <div class="error-container">
+              <div class="error-icon">⚠</div>
+              <h2 class="error-title">Terjadi Kesalahan</h2>
+              <p class="error-message">
+                Maaf, terjadi kesalahan saat memuat Forum Poltek. 
+                Silakan coba muat ulang halaman atau hubungi tim support jika masalah berlanjut.
+              </p>
+              <div class="error-actions">
+                <button class="btn btn-primary" onclick="window.location.reload()">
+                  🔄 Muat Ulang
+                </button>
+                <a href="mailto:support@forum-poltek.ac.id" class="btn btn-secondary">
+                  📧 Hubungi Support
+                </a>
+              </div>
+            </div>
+          `;
+        });
+        
+        // Performance monitoring
+        if ('performance' in window && 'getEntriesByType' in performance) {
+          window.addEventListener('load', function() {
+            const navTiming = performance.getEntriesByType('navigation')[0];
+            if (navTiming) {
+              console.log('Page load time:', navTiming.loadEventEnd - navTiming.fetchStart, 'ms');
+            }
+          });
+        }
+      })();
+    </script>
+  </body>
 </html>
