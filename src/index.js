@@ -103,7 +103,7 @@ class ConsoleSecurityGuard {
     `;
 
         console.log(`%c${banner}`, 'color: #667eea; font-family: monospace; font-size: 12px;');
-        console.log(createGradientText("🚀 FORTEK SECURITY SYSTEM ACTIVATED", "gradient"), styles.title);
+        console.log(createGradientText("🚀 Forum Kampus SECURITY SYSTEM ACTIVATED", "gradient"), styles.title);
         console.log("%c✨ Selamat datang di sistem yang aman!", styles.subtitle);
         console.log("%c🔒 Console Security Guard: AKTIF", styles.success);
 
@@ -323,7 +323,7 @@ if (!securityGuard.isDevMode) {
     // Clear console periodically in production
     setInterval(() => {
         console.clear();
-        console.log("%c🛡️ FORTEK - Console Cleared for Security", styles.success);
+        console.log("%c🛡️ Forum Kampus - Console Cleared for Security", styles.success);
     }, 60000); // Every minute
 }
 
@@ -339,5 +339,5 @@ root.render(
 setTimeout(() => {
     console.log("%c🎉 Aplikasi berhasil dimuat dengan aman!", styles.success);
     console.log("%c🔐 Semua sistem keamanan aktif", styles.info);
-    console.log("%c💪 FORTEK - Powered by Advanced Security", styles.subtitle);
+    console.log("%c💪 Forum Kampus - Powered by Advanced Security", styles.subtitle);
 }, 4000);
