@@ -1,70 +1,159 @@
-# Getting Started with Create React App
+# 💬 Forum Chat - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Selamat datang di repositori frontend untuk aplikasi **Forum Chat**. Proyek ini dibangun untuk menyediakan antarmuka pengguna yang interaktif, responsif, dan kaya fitur untuk platform obrolan forum real-time. Dibangun dengan React, aplikasi ini menawarkan pengalaman pengguna yang modern dan mulus.
 
-## Available Scripts
+<div align="center">
+  <img src="public/logo.png" alt="Logo Aplikasi" width="200"/>
+</div>
 
-In the project directory, you can run:
+<div align="center">
+  
+[![Download](https://img.shields.io/badge/Download-Frontend-green?style=for-the-badge&logo=github)](https://github.com/Zulkifli1409/forum-chat-frontend)
+[![Backend](https://img.shields.io/badge/Download-Backend-blue?style=for-the-badge&logo=github)](https://github.com/Zulkifli1409/forum-chat-backend)
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📜 Daftar Isi
 
-### `npm test`
+- [✨ Fitur Utama](#-fitur-utama)
+- [🚀 Teknologi yang Digunakan](#-teknologi-yang-digunakan)
+- [📁 Struktur Proyek](#-struktur-proyek)
+- [🏁 Memulai](#-memulai)
+  - [Prasyarat](#prasyarat)
+  - [Instalasi](#instalasi)
+  - [Menjalankan Aplikasi](#menjalankan-aplikasi)
+- [📜 Skrip yang Tersedia](#-skrip-yang-tersedia)
+- [🔗 Link Terkait](#-link-terkait)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ Fitur Utama
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 💬 **Obrolan Grup Real-Time** — Berkomunikasi secara instan dengan pengguna lain di ruang obrolan publik
+- 🔒 **Pesan Pribadi** — Kirim pesan langsung ke pengguna admin secara aman
+- 📱 **Antarmuka Pengguna Responsif** — Desain yang dioptimalkan untuk berbagai ukuran layar, dari desktop hingga perangkat seluler
+- 👨‍💼 **Dasbor Admin** — Panel admin yang kuat untuk mengelola pengguna, obrolan, laporan, dan melihat analitik
+- 📊 **Visualisasi Data** — Grafik dan bagan interaktif yang didukung oleh Chart.js untuk analitik penggunaan
+- 🔔 **Sistem Notifikasi** — Pemberitahuan real-time untuk pesan baru dan pembaruan penting lainnya
+- 🔐 **Autentikasi Aman** — Proses masuk dan pendaftaran yang aman menggunakan token JWT
+- 📢 **Manajemen Iklan dan Pengumuman** — Fitur bagi admin untuk mempublikasikan pengumuman dan mengelola slot iklan
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Teknologi yang Digunakan
 
-### `npm run eject`
+Proyek ini dibangun menggunakan teknologi modern berikut:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Teknologi | Versi | Deskripsi |
+|-----------|-------|-----------|
+| **React** | 19.1.1 | Library JavaScript untuk membangun antarmuka pengguna |
+| **React Router** | 7.8.2 | Routing sisi klien dan navigasi |
+| **Axios** | 1.11.0 | Klien HTTP berbasis Promise untuk membuat permintaan ke backend |
+| **Socket.io-client** | 4.8.1 | Komunikasi WebSocket real-time dengan server |
+| **Tailwind CSS** | 3.4.17 | Kerangka kerja CSS utility-first untuk styling yang cepat dan kustom |
+| **Chart.js** | 4.5.0 | Membuat bagan dan visualisasi data yang indah |
+| **react-chartjs-2** | 5.3.0 | Wrapper React untuk Chart.js |
+| **Lucide React** | 0.542.0 | Pustaka ikon yang bersih dan konsisten |
+| **js-cookie** | 3.0.5 | Menangani cookie di sisi klien |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📁 Struktur Proyek
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Struktur direktori proyek diatur sebagai berikut untuk skalabilitas dan kemudahan pemeliharaan:
 
-## Learn More
+```
+/src
+├── /components      # Komponen React yang dapat digunakan kembali (Navbar, ChatBox, dll.)
+├── /context         # Konteks React untuk manajemen state global (AuthContext, ThemeContext)
+├── /pages           # Komponen utama untuk setiap halaman (Login, Register, Chat, Admin)
+├── /services        # Modul untuk berinteraksi dengan API backend (authService, chatService)
+├── App.js           # Komponen root aplikasi dan konfigurasi routing
+├── index.js         # Titik masuk utama aplikasi
+├── index.css        # File CSS global
+└── socket.js        # Konfigurasi instance klien Socket.IO
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🏁 Memulai
 
-### Code Splitting
+Ikuti langkah-langkah ini untuk menjalankan proyek ini di lingkungan pengembangan lokal Anda.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Prasyarat
 
-### Analyzing the Bundle Size
+Pastikan Anda telah menginstal:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Node.js** (disarankan versi LTS)
+- **npm** (atau manajer paket alternatif seperti Yarn)
 
-### Making a Progressive Web App
+### Instalasi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. **Clone repositori:**
 
-### Advanced Configuration
+   ```bash
+   git clone https://github.com/Zulkifli1409/forum-chat-frontend.git
+   cd forum-chat-frontend
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. **Instal semua dependensi proyek:**
 
-### Deployment
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. **Konfigurasi Variabel Lingkungan:**
 
-### `npm run build` fails to minify
+   Buat file `.env` di direktori root proyek dan tambahkan URL API backend Anda:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```env
+   REACT_APP_API_URL=http://localhost:5000/api
+   ```
+
+### Menjalankan Aplikasi
+
+Setelah instalasi selesai, Anda dapat menjalankan aplikasi menggunakan skrip npm.
+
+- **Untuk memulai server pengembangan:**
+
+  ```bash
+  npm start
+  ```
+
+  Aplikasi akan secara otomatis terbuka di browser Anda di `http://localhost:3000`. Server pengembangan mendukung hot-reloading, yang berarti perubahan pada kode akan langsung terlihat tanpa perlu me-refresh halaman.
+
+---
+
+## 📜 Skrip yang Tersedia
+
+Dalam `package.json`, Anda akan menemukan beberapa skrip yang telah dikonfigurasi sebelumnya:
+
+| Perintah | Deskripsi |
+|----------|-----------|
+| `npm start` | Menjalankan aplikasi dalam mode pengembangan |
+| `npm run build` | Membuat build aplikasi yang dioptimalkan untuk produksi di dalam direktori `build/` |
+| `npm test` | Menjalankan test runner dalam mode interaktif |
+| `npm run eject` | ⚠️ Menghapus dependensi build tunggal dari proyek Anda. **Gunakan dengan hati-hati!** |
+
+---
+
+## 🔗 Link Terkait
+
+<div align="center">
+
+| Repository | Link |
+|------------|------|
+| 🎨 **Frontend** | [Download Frontend](https://github.com/Zulkifli1409/forum-chat-frontend) |
+| 🖥️ **Backend** | [Download Backend](https://github.com/Zulkifli1409/forum-chat-backend) |
+
+</div>
+
+---
+
+<div align="center">
+  
+**Dibuat dengan ❤️ menggunakan React dan Tailwind CSS**
+
+</div>
